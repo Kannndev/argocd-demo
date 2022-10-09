@@ -6,7 +6,8 @@ spec:
   selector:
     matchLabels:
       app: my-node-express-app
-  replicas: 3
+  replicas: 2
+  revisionHistoryLimit: 1
   template:
     metadata:
       labels:
@@ -17,3 +18,4 @@ spec:
         image: rbkannan1/node-express-app:v2.0
         ports:
         - containerPort: 3000
+
