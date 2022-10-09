@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-node-express-app
+spec:
+  selector:
+    matchLabels:
+      app: my-node-express-app
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: my-node-express-app
+    spec:
+      containers:
+      - name: my-node-express-app
+        image: rbkannan1/node-express-app:v1.0
+        ports:
+        - containerPort: 3000
