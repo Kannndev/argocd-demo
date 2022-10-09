@@ -1,0 +1,7 @@
+apiVersion: v1
+data:
+  limit-req-status-code: "429"
+kind: ConfigMap
+metadata:
+  name: ingress-nginx-controller
+  namespace: ingress-nginx
