@@ -7,7 +7,7 @@ spec:
     matchLabels:
       app: my-node-express-app
   replicas: 2
-  revisionHistoryLimit: 1
+  revisionHistoryLimit: 0
   template:
     metadata:
       labels:
