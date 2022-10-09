@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: my-node-express-app
-        image: rbkannan1/node-express-app:v1.0
+        image: rbkannan1/node-express-app:v2.0
         ports:
         - containerPort: 3000
