@@ -6,8 +6,7 @@ metadata:
     nginx.ingress.kubernetes.io/ssl-redirect: "false"
     nginx.ingress.kubernetes.io/use-regex: "true"
     nginx.ingress.kubernetes.io/rewrite-target: /$2
-    nginx.ingress.kubernetes.io/global-rate-limit: "1"
-    nginx.ingress.kubernetes.io/global-rate-limit-window: "1m"
+    nginx.ingress.kubernetes.io/limit-rpm: "1"
 spec:
   ingressClassName: nginx
   rules:
