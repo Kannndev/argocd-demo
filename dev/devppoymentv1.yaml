@@ -5,16 +5,16 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: my-node-express-app
+      app: my-node-express-appv1
   replicas: 2
   revisionHistoryLimit: 0
   template:
     metadata:
       labels:
-        app: my-node-express-app
+        app: my-node-express-appv1
     spec:
       containers:
-      - name: my-node-express-app
+      - name: my-node-express-appv1
         image: rbkannan1/node-express-app:v1.0
         ports:
         - containerPort: 3000
